@@ -1,0 +1,61 @@
+@import 'primeicons/primeicons.css' layer(icons);
+
+@layer tailwind-utilities {
+  @tailwind utilities;
+  @tailwind components;
+}
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer app {
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+
+  .p-datatable-header {
+    h2 {
+      @apply font-black;
+    }
+  }
+
+  .input-container {
+    @apply flex flex-col gap-1.5 w-full justify-end;
+    label {
+      @apply text-xs text-slate-500;
+    }
+
+    .p-select,
+    .p-icon-field,
+    input,
+    .p-inputnumber,
+    .p-datepicker {
+      @apply w-full;
+    }
+  }
+
+  .dialog-actions {
+    @apply flex justify-end gap-2 items-center mt-2;
+  }
+
+  .p-fluid .p-inputtext {
+    width: unset;
+  }
+
+  a {
+    @apply text-primary-500;
+  }
+  a:hover {
+    @apply text-primary-700;
+  }
+  td,
+  th {
+    @apply whitespace-nowrap;
+  }
+}
+
+.p-card {
+  @apply border-none shadow-none;
+}
+
+/* You can add global styles to this file, and also import other style files */
